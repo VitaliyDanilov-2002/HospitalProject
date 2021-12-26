@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<head xmlns:th="http://www.w3.org/1999/xhtml">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <title>Клиника Klizer</title>
+</head>
+
+    <style>
+        body{
+            background: url("https://cdn.pixabay.com/photo/2017/10/04/09/56/laboratory-2815641_960_720.jpg") no-repeat;
+            -moz-background-size: 100%;
+            -webkit-background-size: 100%;
+            -o-background-size: 100%;
+            background-size: 100%;
+        }
+    </style>
+
+<body style="background-attachment: fixed" topmargin="0">
+
+           <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+               <div class="container-fluid">
+                   <div class="bg-success p-2 text-dark bg-opacity-10">
+                       <font size="7" style="font-family:'Times New Roman', serif">Клиника</font>
+                       <font size="7" color="#9d6bff" style="font-family:'Brush Script MT', cursive">Klizer</font>
+                   </div>
+                   <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                       <span class="navbar-toggler-icon"></span>
+                   </button>
+                   <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                       <div class="offcanvas-header">
+                           <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Ввойдите или зарегистрируйтесь</h5>
+                           <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                       </div>
+                       <div class="offcanvas-body">
+                           <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                               <li class="nav-item">
+                                   <a th:href="@{/login}"class="btn btn-primary">LOGIN</a>
+                               </li>
+                               <li class="nav-item">
+                                   <a th:href="@{/registration}"class="btn btn-primary">REGISTRATION</a>
+                               </li>
+                                   </ul>
+                               </li>
+                           </ul>
+                       </div>
+                   </div>
+               </div>
+           </nav>
+
+               <div class="jumbotron">
+                   <div class="container">
+                       <div class="card">
+                           <div class="card-body">
+                               <h1>Здравствуйте!</h1>
+                               <p>Этот проект создан для вашей безопасности. Принцип роботы достаточно простой:вы регестрируетесь на сайте или входите
+                                   в кабинет если акаунт уже имеется. Выбираете врача к которому хотите попасть, так же выбирате дату, и оставляете заявку
+                                   на посещение. Специалист рассматривает вашу заявку, и если у него есть свободное время, то он принимает вас на назначеную ранее
+                                   дату. Такой способ является более безопасный в данный момент времени, нежели встреча вживую.</p>
+                           </div>
+                       </div>
+                   </div>
+
+                   <div class="container-fluid">
+                       <div class="row">
+                           <div class="col-md-4">
+                               <h2>Терапевт</h2>
+                               <div class="card">
+                                   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Sergey_Botkin_after_Kramskoi.jpg/330px-Sergey_Botkin_after_Kramskoi.jpg"
+                                        class="card-img-top" width="400" height="650">
+                                   <div class="card-body">
+                                       <p class="card-text">Боткин Сергей Петрович.
+                                           Получил обширную подготовку по различным разделам медицины за рубежом:
+                                           в клинике профессора Г. Хирша в Кёнигсберге, в патологическом институте у Р.
+                                           Вирхова в Вюрцбурге
+                                           и
+                                           Берлине, в лаборатории Гоппе-Зейлера, в клинике знаменитого терапевта Л.
+                                           Траубе, невропатолога
+                                           Ромберга,
+                                           сифилидолога Береншпрунга в Берлине, у физиолога К. Людвига и клинициста И.
+                                           Оппольцера в Вене, в
+                                           Англии,
+                                           а также в лаборатории экспериментатора-физиолога К. Бернара, в клиниках
+                                           Бартеза, Бюшу, Трюссо и
+                                           др.
+                                           в Париже. Первые работы Боткина вышли в «Архиве Вирхова» («Архиве
+                                           патологической анатомии,
+                                           физиологии
+                                           и клинической медицины»). В конце 1859 года был приглашён в клинику терапии
+                                           Императорской
+                                           Медико-хирургической академии. 10 августа 1860 года Боткин прибыл в
+                                           Санкт-Петербург. Защитил
+                                           докторскую
+                                           диссертацию на тему: «О всасывании жира в кишках» и был назначен исправляющим
+                                           должность адъюнкта
+                                           при
+                                           терапевтической клинике, которой заведовал профессор П. Д. Шипулинский.
+                                           Вскоре отношения Боткина
+                                           и
+                                           Шипулинского испортились, и последний был вынужден подать в отставку. Однако
+                                           конференция
+                                           академии
+                                           не хотела передавать руководство клиникой талантливому Боткину, и только
+                                           письмо от студентов и
+                                           врачей
+                                           позволило ему занять освободившуюся должность в 1861 году и в возрасте 29 лет
+                                           получить звание
+                                           профессора.
+                                           Вышедшие из клиники ученики Боткина вскоре возглавили собственные кафедры: Н.
+                                           А. Виноградов
+                                           — в Казанском университете, В. Т. Покровский — в Киевском университете, В. Г.
+                                           Лашкевич — в
+                                           Харьковском,
+                                           а Л. В. Попов — в Варшавском университете.</p>
+                                       <a href="https://ru.wikipedia.org/wiki/%D0%91%D0%BE%D1%82%D0%BA%D0%B8%D0%BD,_%D0%A1%D0%B5%D1%80%D0%B3%D0%B5%D0%B9_%D0%9F%D0%B5%D1%82%D1%80%D0%BE%D0%B2%D0%B8%D1%87"
+                                          class="btn btn-primary"> Узнать больше</a>
+                                   </div>
+                               </div>
+                           </div>
+
+                               <div class="col-md-4">
+                               <h2>Дермaтолог</h2>
+                               <div class="card">
+                                   <img src="https://s3-eu-west-1.amazonaws.com/doktortakvimi.com/doctor/8dce43/8dce438150121daf48f5826a294686e2_large.jpg"
+                                        class="card-img-top" width="400" height="500">
+                                   <div class="card-body">
+                                       <p class="card-text"> Профессор доктор Мустафа Оздемир. Профессор доктор Мустафа
+                                           Оздемир является известным дерматолог и имеет опыт более 20 лет. Его
+                                           клинические интересы
+                                           заключаются в Аллергия, абсцесс, пятна на коже и чрезмерные волосы. Он также
+                                           предоставляет
+                                           терапию в Шрамы от прыщей, лечение волос и перхоть в волосах. Он имеет много
+                                           публикаций в
+                                           международных и национальных журналах. Профессор доктор Мустафа Оздемир имеет
+                                           интерес к
+                                           аппликации ботулинического токсина, аппликаторы наполнителей, лазеры, системы
+                                           омоложения кожи
+                                           лица и кожи, подтяжка веревки, липолиз и мезотерапия в косметической
+                                           дерматологии. Он является
+                                           автором двух книг, также названных «Современные подходы к лечению псориаза
+                                           »и« Клинические
+                                           метрические измерения и критерии классификации в дерматологии». У него есть
+                                           членская ассоциация
+                                           с Стамбульская медицинская палата, Турецкая ассоциация дерматологов,
+                                           Стамбульская ассоциация
+                                           кожных и венерических болезней, Ассоциация псориаза и Ассоциация
+                                           косметической дерматологии.
+                                       </p>
+                                       <a href="https://www.doktortakvimi.com/mustafa-ozdemir-5/dermatoloji/istanbul"
+                                          class="btn btn-primary">Узнать больше &raquo;</a>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="col-md-4">
+                <h2>Стоматолог</h2>
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/ru/thumb/3/3a/%D0%95%D0%B2%D0%B4%D0%BE%D0%BA%D0%B8%D0%BC%D0%BE%D0%B2_%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80_%D0%98%D0%B2%D0%B0%D0%BD%D0%BE%D0%B2%D0%B8%D1%87.jpg/411px-%D0%95%D0%B2%D0%B4%D0%BE%D0%BA%D0%B8%D0%BC%D0%BE%D0%B2_%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80_%D0%98%D0%B2%D0%B0%D0%BD%D0%BE%D0%B2%D0%B8%D1%87.jpg" class="card-img-top" width="400" height="650">
+                    <div class="card-body">
+                    <p class="card-text">А. И. Евдокимов внёс большой вклад в изучение проблем
+                        хирургической стоматологии, разработал классификацию острых гнойных одонтогенных воспалительных
+                        процессов, выделил как отдельную нозологическую форму периостит. Им лично, его коллегами и
+                        учениками детально изучены этиология, патогенез, клиника и лечение воспалительных процессов
+                        костных и мягких тканей челюстно-лицевой области. Исследовал и описал хирургические способы
+                        лечения переломов челюстей (операции наложения проволочного шва, клеевой остеосинтез),
+                        новообразования челюстей и слюнных желёз, проблемы восстановительной хирургии челюстно-лицевой
+                        области: обосновал хирургическое вмешательство при врождённой расщелине губы, микростоме, а
+                        также применение пластической хирургии с помощью филатовского стебля[1].
+
+                        А. И. Евдокимов сыграл важную роль в организации стоматологического образования в СССР. По его
+                        инициативе в 1932 году созданы кафедра и клиника стоматологии в Воронежском медицинском
+                        институте, в 1934 году — стоматологическая клиника во 2-м Московском медицинском институте, а
+                        ещё два года спустя, в 1936 году — кафедра и клиника хирургической стоматологии в Московском
+                        медицинском стоматологическом институте.
+                    </p>
+                <a href="https://ru.wikipedia.org/wiki/%D0%95%D0%B2%D0%B4%D0%BE%D0%BA%D0%B8%D0%BC%D0%BE%D0%B2,_%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80_%D0%98%D0%B2%D0%B0%D0%BD%D0%BE%D0%B2%D0%B8%D1%87_(%D1%81%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%BE%D0%BB%D0%BE%D0%B3)" class="btn btn-primary">Узнать больше &raquo;</a>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+            <footer>
+                <p> &copy; Все права защищены 2022</p>
+
+            </footer>
+            </div>
+        </div>
+    </div>
+
+
+           <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+           <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+           <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
